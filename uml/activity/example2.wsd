@@ -1,0 +1,7 @@
+@startuml "箭头上的标签"
+
+(*) --> "First Activity"
+-->[You can put also labels] "Second Activity"
+--> (*)
+
+@enduml
