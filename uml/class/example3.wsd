@@ -1,0 +1,22 @@
+@startuml "声明属性或方法"
+
+Object <|-- ArrayList
+Object : equals()
+ArrayList : Object[] elementData
+ArrayList : size()
+
+class Dummy {
+  String data
+  void methods()
+}
+class Flight {
+  flightNumber : Integer
+  departureTime : Date
+}
+
+class DummyX {
+  {field} A field (despite parentheses)
+  {method} Some method
+}
+
+@enduml

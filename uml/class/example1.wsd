@@ -1,0 +1,31 @@
+@startuml "类之间的关系"
+
+Class01 <|-- Class02 /'继承，子类继承父类'/
+Class01x --|> Class02x
+
+Class03 *-- Class04 /'组合，N 个体强关联组成一个整体'/
+Class03x --* Class04x
+
+Class05 o-- Class06 /'聚合，N 个体弱关联组成一个整体'/
+Class05x --o Class06x
+' Class07 .. Class08
+' Class09 -- Class10
+
+Class11 <|.. Class12 /'实现，这个关系最常用于接口'/
+Class11x ..|> Class12x
+
+Class13 <-- Class14 /'关联，是一种弱关系，被关联的元素间通常可以被独立的考虑'/
+Class13x --> Class14x
+
+Class15 <.. Class16 /'依赖'/
+Class15x ..> Class16x
+' Class17 ..|> Class18
+' Class19 <--* Class20
+
+/'Class21 #-- Class22
+Class23 x-- Class24
+Class25 }-- Class26
+Class27 +-- Class28
+Class29 ^-- Class30'/
+
+@enduml
