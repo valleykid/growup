@@ -1,0 +1,12 @@
+@startuml "关系上的标识"
+
+A "1" *-- "N" B : 多个 B 组合成了 A
+C o-- D : 多个 D 聚合成了 C
+E --> "1" F
+
+class Car
+Driver - Car : drives >
+Car *- Wheel : have 4 >
+Car -- Person : < owns
+
+@enduml

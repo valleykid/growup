@@ -1,0 +1,6 @@
+@startuml "简单活动"
+
+(*) --> "first activity"
+"first activity" --> (*)
+
+@enduml

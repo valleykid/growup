@@ -1,0 +1,29 @@
+@startuml "鸟类"
+
+class O as "氧气"
+class H2O as "水"
+class Wing as "翅膀"
+
+interface Fly as "飞翔" {
+  飞()
+}
+
+class A as "动物" {
+  生命
+  新陈代谢(int 氧气, int 水)
+  繁殖()
+}
+
+class Bird as "鸟" {
+  羽毛
+  下蛋()
+}
+
+O <.. A
+H2O <.. A
+
+A <|-- Bird
+Wing "2" --* "1" Bird
+Fly <|.. Bird
+
+@enduml

@@ -1,0 +1,18 @@
+@startuml "定义可访问性"
+
+class Dummy {
+ -field1 /'private'/
+ #field2 /'protected'/
+ ~method1() /'类静态的'/
+ +method2() /'public'/
+}
+
+skinparam classAttributeIconSize 0
+class DummyX {
+ -field1
+ #field2
+ ~method1()
+ +method2()
+}
+
+@enduml

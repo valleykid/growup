@@ -1,0 +1,8 @@
+@startuml "改变箭头方向"
+
+(*) -up-> "First Activity"
+-right-> "Second Activity"
+--> "Third Activity"
+-left-> (*)
+
+@enduml
