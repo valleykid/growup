@@ -1,0 +1,24 @@
+{
+  "presets": [
+    [
+      "@babel/env",
+      {
+        "targets": {
+          "browsers": ["last 2 versions"]
+        }
+      }
+    ],
+    ["@babel/react"]
+  ],
+  "plugins": [
+    "@babel/plugin-syntax-dynamic-import",
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-class-properties",
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "regenerator": true
+      }
+    ]
+  ]
+}
